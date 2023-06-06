@@ -29,5 +29,6 @@ public class Teacher {
                 '}';
     }
 
+    //kalibim var. artik runner da object ureticem
 
 }
