@@ -14,7 +14,7 @@ public class StdRunner {
 
         Student std2= new Student(); //2.objemi olusturdum
 
-        //class name uzerinden staticMethod'a ulastim. Ben static methodum
+        //class name uzerinden staticMethod'a ulastim.Object olusturmama gerek yok cunku static. Ben static methodum.
         Student.staticMethod();
 
         //non-static old icin object olusturup cagirdim(std2). Ben static olmayan methodum
@@ -29,6 +29,9 @@ public class StdRunner {
 
 
 
+        //stdName i 1 kere olusturdum cunku static. non-static variable'lari 3 defa olusturduk. (std1-st2-std3)
+        //yani ne kadar object varsa o kadar non-static variable olusturucam
+        //static-->class uzerinden,   non-static-->object uzerinden ulasiyoruz
 
     }
 }

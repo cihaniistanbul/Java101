@@ -22,10 +22,12 @@ public class Student {
     public int age = 13; //non-static
 
 
+    //static method
     public static void staticMethod() {
         System.out.println("Ben static methodum");
     }
 
+    //non-static method
     public void nonStaticMethod() {
         System.out.println("Ben static olmayan methodum");
     }

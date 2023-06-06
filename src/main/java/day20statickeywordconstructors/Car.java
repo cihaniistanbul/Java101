@@ -4,10 +4,11 @@ public class Car {
 
     /*
     Constructor nedir?
-    Class'dan object uretmenize yarayan code blocklaridir.
+    Class'dan object uretmemize yarayan code blocklaridir.
 
-    Class olusturdugumuzdda java bize otomatik olarak bir constructor verir. Ama bu constructor gozle gorulmez ve
+    Class olusturdugumuzda java bize otomatik olarak bir constructor verir. Ama bu constructor gozle gorulmez ve
     gozle gorulmeyen ama otomatik olarak java tarafindan verilen bu constructorlara default constructor denir
+    (Constructor olmadan objectleri olusturamam)
 
     default constructor -->    "Car(){   }" seklindedir.
 
@@ -43,6 +44,7 @@ public class Car {
 
 
 
+    // Car class'inda olabilecek ozellikleri yaziyoruz
     String make = "Honda";
 
     String model = "Accord";
@@ -51,6 +53,7 @@ public class Car {
     int year =2023;
 
     boolean hybrid=true;
+
 
 
     public Car (String make, String model, int year, boolean hybrid){  //constructor i gorunur hale getirdim. bundan 3 tane object urettim
@@ -74,7 +77,7 @@ public class Car {
     }
 
     @Override
-    public String toString() { //sağ tik-generate-toString-ok
+    public String toString() { //sag tik-generate-toString-ok
         return "Car{" +
                 "make='" + make + '\'' +
                 ", model='" + model + '\'' +
