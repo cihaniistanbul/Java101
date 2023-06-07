@@ -1,4 +1,4 @@
-package day20statickeywordconstructors;
+package day21arraylists;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -109,6 +109,35 @@ public class Tekrar {
         Collections.sort(num2);
 
         System.out.println(num1.equals(num2));
+
+
+
+        ArrayList<String> cities = new ArrayList<>();
+        cities.add("Miami");
+        cities.add("Istanbul");
+        cities.add("Yozgat");
+        cities.add("Barcelona");
+        cities.add("Miami");
+        cities.add("Istanbul");
+        cities.add("Istanbul");
+        cities.add("Yozgat");
+
+        System.out.println(cities);
+
+        cities.remove("Miami");
+        System.out.println(cities);
+
+
+        System.out.println(cities.remove(2));
+
+
+        List<Integer> yas = new ArrayList<>();
+        yas.add(23);
+        yas.add(12);
+        yas.add(7);
+        yas.add(4);
+
+        yas.remove(1);
 
 
     }
