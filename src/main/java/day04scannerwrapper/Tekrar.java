@@ -41,7 +41,7 @@ public class Tekrar {
         System.out.println((sayi1 * sayi2));
         System.out.println((sayi1 / sayi2));
         System.out.println((sayi1 - sayi2));
-*/
+
 
 
 
@@ -59,13 +59,20 @@ public class Tekrar {
 
         System.out.println("alan " + kisaKn*uzunKn);
 
+*///Ornek 1: short data type inin min ve max degerlerini kod yazarak bulunuz
+
+        short sMax =Short.MAX_VALUE;
+        short sMin =Short.MIN_VALUE;
+        System.out.println(sMin);
+        System.out.println(sMax);
 
 
+        //Ornek2: int data type inin minimum degeri ile byte data type inin
+        //maximum degerleri toplamini bulunuz
 
-
-
-
-
+        int intMin = Integer.MIN_VALUE;
+        byte bytMax =Byte.MAX_VALUE;
+        System.out.println(intMin+bytMax);
 
     }
 }

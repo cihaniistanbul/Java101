@@ -8,12 +8,13 @@ import java.util.List;
 public class ArrayList02 {
     public static void main(String[] args) {
         // Bir List in baska bir list ile ayni olup olmadigini nasil kontrol ederiz?
-        // İki List in esit olabilmesi icin ayni indexte ayni elemanlar olmalidir
+        // İki List in esit olabilmesi icin ayni indexte ayni elemanlar olmalidir**
         ArrayList<String> names1= new ArrayList<>();
         names1.add("Tom");
         names1.add("Jim");
         names1.add("Kim");
 
+        // 2 list olustuyorum karsilastirmak icin
 
         ArrayList<String> names2= new ArrayList<>();
         names2.add("Tom");
@@ -25,12 +26,12 @@ public class ArrayList02 {
 
 
         //Ornek: Verilen iki integer listte tamamiyla ayni elemanlarin olup olmadigini kontrol eden kodu yaziniz
-
         ArrayList<Integer> nums1 = new ArrayList<>();
         nums1.add(8);
         nums1.add(10);
         nums1.add(9);
 
+        //karsilastirmak icin 2 List olusturdum.Eger bunlari siralayip karsilastirirsak esit cikacak
 
         ArrayList<Integer> nums2 = new ArrayList<>();
         nums2.add(8);
@@ -39,6 +40,7 @@ public class ArrayList02 {
 
         Collections.sort(nums1);
         Collections.sort(nums2);
+        //siralamayi yaptim simdi esit olup olmadigini karsilastirabilirim
         boolean result = nums1.equals(nums2);
         System.out.println(result); //true
 
