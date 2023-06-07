@@ -29,7 +29,7 @@ public class IfStatements01 {
 
         if(str.indexOf(ch1) == str.lastIndexOf(ch1)){        //a'nin ilk gorunumunun indexi = son gorunumunun indexine esitse console a yazdir
 
-            System.out.println(ch1); //False a yazmaz
+            System.out.println(ch1); //False.console da a yazmaz
         }
 
 

@@ -78,12 +78,6 @@ public class IfStatment02SuleymanHoca {
         }
 
 
-        /*
-        Kullanicidan bir yil alin.
-        Eger yil 1000'e bolunuyorsa ekrana "Milenyum" yazdirin
-        Eger yil 100 e bolunuyorsa ekrana "Yuzyil" yazdirin
-        Eger yil 10 a bolunuyorsa ekrana "Onyıl" yazdirin
-         */
 
         Scanner inpuT = new Scanner(System.in);
         System.out.println("Yil giriniz");
