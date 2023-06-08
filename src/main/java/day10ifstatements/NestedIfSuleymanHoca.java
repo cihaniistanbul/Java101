@@ -30,6 +30,7 @@ public class NestedIfSuleymanHoca {
                 System.out.println("Normalsin!");
 
             }
+
         } else {
             if (s > -10) {
                 System.out.println("Negatifsin!");
