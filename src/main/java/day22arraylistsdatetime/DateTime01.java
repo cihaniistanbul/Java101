@@ -7,16 +7,16 @@ import java.time.Month;
 public class DateTime01 {
     public static void main(String[] args) {
 
-        //icinde bulundugumuz zaman dilimindeki tarihi nasil aliriz?
-        LocalDate myCurrentDate= LocalDate.now(); //hangi bolgedeyseniz anlik olarak onu aliyor
+        //icinde bulundugumuz zaman dilimindeki tarihi nasil aliriz? (now methoduyla)
+        LocalDate myCurrentDate = LocalDate.now(); //hangi bolgedeyseniz anlik olarak onu aliyor --> tarih objecti  (now static)
         System.out.println(myCurrentDate); //2023-06-07
 
 
         //Tarihten istedigimiz bilesenleri nasil aliriz?
-        int monthValue = myCurrentDate.getMonthValue();
+        int monthValue = myCurrentDate.getMonthValue(); //myCurrentDate non-static cunku object
         System.out.println(monthValue); //6
 
-        int yearValue= myCurrentDate.getYear();
+        int yearValue = myCurrentDate.getYear();
         System.out.println(yearValue); //2023
 
         int dayValue = myCurrentDate.getDayOfMonth();
@@ -44,12 +44,12 @@ public class DateTime01 {
 
 
         //specific bir tarih object i nasil olusturulur?
-        LocalDate date1 = LocalDate.of(1990,8,10);
-        LocalDate date2 = LocalDate.of(1980,8,10);
+        LocalDate date1 = LocalDate.of(1990, 8, 10);
+        LocalDate date2 = LocalDate.of(1980, 8, 10);
 
 
         //Bir tarihin bir tarihten sonra olup olmadigi nasil kontrol edilir?
-        boolean r1= date1.isAfter(date2);
+        boolean r1 = date1.isAfter(date2);
         System.out.println(r1); //true
 
         boolean r2 = date1.isBefore(date2);
@@ -60,7 +60,10 @@ public class DateTime01 {
         System.out.println(r3); //false
 
 
-        //.....
+        /*
+        Her bir class ayni zamanda data type dir. String, List birer class ama her class data type idir cunku object uretildigi kalibin type inde olur
+
+         */
     }
 }
 
