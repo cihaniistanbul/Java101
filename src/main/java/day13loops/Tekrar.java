@@ -280,6 +280,9 @@ public class Tekrar {
         //   "Pwd12?Ab" --> P12?A
 
 
+        /*
+
+
         String s = "Pwd12?Ab";
 
         for (int i = 0; i<s.length()    ; i++   ){
@@ -295,10 +298,101 @@ public class Tekrar {
 
         }
 
+  */
+
+        //Ornek 2: 11 den 14 e kadar tum sayilari ekrana yazdiran kodu yaziniz
+
+        for (int i = 11; i < 15; i++) {
+            System.out.println(i);
+
+        }
+        //Ornek 3: 40 dan 23 e kadar tum cift sayilari ekrana yazdiriniz
+        for (int i = 40; i > 23; i--) {
+
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+        System.out.println("------");
+
+        //Ornek 4: 18 den 56 ya kadar tum tek sayilari ekrana yazdiran kodu yaziniz
+        for (int i = 18; i < 56; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+
+        System.out.println("----");
+
+        //Ornek 1: 21 den 180 e kadar hem 2 hem 3 ile bolunebilen tamsayilari ekrana yazdiriniz
+        for (int i = 21; i < 181; i++) {
+            if (i % 2 == 0 && i % 3 == 0) {
+                System.out.println(i);
+            }
+
+        }
 
 
+        //Ornek 2: Size verilen kucuk harf ile yazilmis String in index i cift sayi olan characterlerini buyuk harfe donusturen kodu yaziniz
+        //         0 1 2 3 4 5
+        //         a n k a r a  --> bizden cift olan indexleri buyuk yapmamiz isteniyor. AKR
 
 
+        String city = "ankara";
+        for (int i = 0; i < city.length(); i++) {
+            String ch = city.substring(i, i + 1);
+
+            if (i % 2 == 0) {
+                System.out.println(ch.toUpperCase());
+            }
+        }
+
+
+        //Ornek 3: Verilen bir String ile ilk a harfinden onceki tum characterleri console a yazdiriniz
+        //   "I love Java" --> "I love J"      -->a dan sonrakileri console yazdirmamizi istemiyor
+        //burada neden loop kullanmaliyiz? Cunku a yi gorene kadar characterlere tek tek bakmam lazim. loop var
+
+        String x = "I love Java";
+
+        for (int i = 0; i < x.length(); i++) {
+            int ch = x.charAt(i);
+            if (ch == 'a') {
+                break;
+            }
+            System.out.print(x.charAt(i));
+        }
+
+        System.out.println();
+
+        System.out.println("-----");
+
+        //Ornek 4: Verilen bir String de son 'a' dan sonraki tum characterleri ters sirada yazdiriniz
+        //    "Germany" --> yn
+
+        String s = "Germany";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (s.charAt(i) == 'a') {
+                break;
+            }
+            System.out.print(s.charAt(i));
+        }
+
+        System.out.println("-----");
+
+        //Ornek: Verilen bir String de kucuk harfleri console a yazmayiniz
+        //   "Pwd12?Ab" --> P12?A
+
+        String s1 = "Pwd12?Ab";
+
+      for (int i=0 ; i<s1.length() ; i++){
+
+         char ch1= s1.charAt(i);
+
+          if (ch1>='a'&& ch1<='z'){
+              continue;
+          }
+          System.out.print(ch1);
+      }
     }
 }
 

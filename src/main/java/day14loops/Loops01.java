@@ -16,7 +16,7 @@ public class Loops01 {
         for ( int i = t.length()-1  ; i>=0   ;i--    ){                    // (t) stringi (Java) icinden ters kabina datayi sondan alip koyacagim.Tersten yazmami istiyor
 
 
-            ters= ters+t.substring(i,i+1);                                // Simdi tek tek gidip t sepetiindeki characterleri alip ters sepetine koyucam.
+            ters= ters+t.substring(i,i+1);                                // Simdi tek tek gidip t sepetindeki characterleri alip ters sepetine koyucam.
                                                                           // t.substring(i,i+1) ile son characteri aliriz cunku baslangic noktasina length()-1 demistik.
                                                                           // Sondaki a yi aldim bunu ters sepetine concatenation yapicam. Ters sepetinde hiclik vardi
                                                                           // a yi hiclige ekledim. Daha sonra ters kutusuna koydum. Bu islem hepsi icin tek tek calisacak

@@ -31,7 +31,9 @@ public class Switch01 {
 
 
         //2.yol switch
+/*
 
+ */
         switch (dayName.toLowerCase()) {
             case "sunday":               // --> Sunday olma durumunda console a 1 yazdir ve break (isi bitir)
                 System.out.println(1);
@@ -62,7 +64,7 @@ public class Switch01 {
         /*
         NOTE
          Bu soruyu if else ile cozdugumuzde cok fazla kod kalabaligi oluyor. Java 3ten fazla senaryolara sahip bu kod yapılarini,
-         cok fazla condition kontrol edilmesi gereken durumlar icin SWİTCH olusturmus.
+         cok fazla condition kontrol edilmesi gereken durumlar icin SWITCH olusturmus.
 
          Eger break yazmazsak Java true cikan koddan sonra hepsini console a yazdirir
 
