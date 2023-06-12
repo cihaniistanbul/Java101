@@ -1,5 +1,6 @@
 package day22arraylistsdatetime;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -70,7 +71,7 @@ public class Tekrar {
    Example 1: Kullanicinin girdigi harf list'te var ise o harfi "Buldum!" a cevirin, yok ise o harfi list'e ekleyin
 
            --> String class kullanmak tercih edilir cunku string class method acisindan cok zengindir
-    */
+
 
 
         List<String> myList = new ArrayList<>();
@@ -86,6 +87,30 @@ public class Tekrar {
         if (myList.contains(letter)){
              myList.set(myList.indexOf(letter),"Buldum!" );
         }
+
+
+            */
+        LocalDate myCurrentDate= LocalDate.now();
+        System.out.println(myCurrentDate); //2023-06-11
+
+
+        int  monthValue=myCurrentDate.getMonthValue();
+        System.out.println(monthValue);
+
+
+        System.out.println(myCurrentDate.plusYears(2).plusDays(1));
+
+        System.out.println(myCurrentDate.minusYears(30));
+
+        System.out.println(myCurrentDate.minusYears(30).plusMonths(1).minusDays(2)); //1993-07-09
+
+        LocalDate date1 =LocalDate.of(1993,7, 9);
+        LocalDate date2 =LocalDate.of(1990,7, 9);
+
+        boolean r1 = date1.isAfter(date2);
+        System.out.println(r1);
+
+        System.out.println(date1.isBefore(date2)); //false
 
     }
 }

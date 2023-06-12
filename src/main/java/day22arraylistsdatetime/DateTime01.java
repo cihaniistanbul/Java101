@@ -43,13 +43,14 @@ public class DateTime01 {
         System.out.println(myCurrentDate.minusYears(20).minusMonths(2).minusDays(5)); //2003-04-02
 
 
-        //specific bir tarih object i nasil olusturulur?
+        //specific bir tarih object i nasil olusturulur?  of() methodu static
+        //Javanin dinamik olarak tarih vermesini istemiyorum ben oluşturuyorum
         LocalDate date1 = LocalDate.of(1990, 8, 10);
         LocalDate date2 = LocalDate.of(1980, 8, 10);
 
 
         //Bir tarihin bir tarihten sonra olup olmadigi nasil kontrol edilir?
-        boolean r1 = date1.isAfter(date2);
+        boolean r1 = date1.isAfter(date2); //date1 sonra mı date 2 den
         System.out.println(r1); //true
 
         boolean r2 = date1.isBefore(date2);
@@ -62,8 +63,8 @@ public class DateTime01 {
 
         /*
         Her bir class ayni zamanda data type dir. String, List birer class ama her class data type idir cunku object uretildigi kalibin type inde olur
-
-         */
+        now() methodu -->static
+        */
     }
 }
 
