@@ -6,7 +6,7 @@ public class Sb02 {
         StringBuilder sb1 = new StringBuilder("Java is easy");
         System.out.println(sb1); //Java is easy
 
-        sb1.reverse(); //String in ters cevrilmesi looplar ile de yapilir bu kisa yoldur
+        sb1.reverse(); //String in ters cevrilmesi looplar ile de yapilir bu kisa yoldur / herhangi bir kavanoza koymamiza gerek yok
         System.out.println(sb1); //ysae si avaJ
 
         sb1.deleteCharAt(6); //verilen index teki characteri siler
@@ -22,7 +22,8 @@ public class Sb02 {
         System.out.println(sb1); //ysXXXvaJ
 
 
-        sb1.insert(3, "000");
+        //3 tane say atla demek offset:
+        sb1.insert(3, "OOO"); //index mantigiyla yapabiliriz
         System.out.println(sb1); //ysX000XXvaJ
 
 
@@ -36,8 +37,8 @@ public class Sb02 {
         System.out.println(r1); //1
         /*
         compareTo iki Stringbuilder esit mi diye kontrol etmek icin ilk harften baslayarak tüm karakterleri karsilastirir.
-        Aynı olan karakterler icin bir sey return etmezken farklı olan ilk karakter için ascii tablosuna göre kac değer geride veya ileride olduğunu yazdırır.
-        Tamamen aynı ise bize 0 return eder
+        Aynı olan karakterler icin bir sey return etmezken farklı olan ilk karakter icin ascii tablosuna göre kac deger
+        geride veya ileride olduğunu yazdırır. Tamamen aynı ise bize 0 return eder.
          */
 
 
@@ -47,7 +48,7 @@ public class Sb02 {
         //toString() kullanarak String class methodlarini kullanabiliriz
         String str = sb2.toString().toUpperCase();
         System.out.println(str);//JAVA
-        System.out.println(sb2); //Java --> String e cevirdigimiz icin
+        System.out.println(sb2); //Java --> String e cevirdigimiz icin / sb2 oldugu gibi duruyor.
 
 
         //String nasil StringBuilder e cevrilir?

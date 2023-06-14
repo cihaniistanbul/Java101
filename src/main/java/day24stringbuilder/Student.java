@@ -25,7 +25,7 @@ public class Student {
 
      */
 
-    //public her class dan kullanilabilir
+    //public her class dan kullanilabilir. (isim old icin public yaptik)
     public String stdName = "Ali Can";
 
     //protected olanlar baska package dan sadece child classlardan gorulur
@@ -44,8 +44,6 @@ public class Student {
     Class'lar için  sadece "public" ve "default" access modifier kullanilir.
     Class tanımlanırken "private" veya "protected" access modifier kullanilmaz.
      */
-
-
 
 
 }
