@@ -120,8 +120,10 @@ public class Tekrar {
         // "Java" --> "avaJ"
 
 
+
         String t = "Java";
         String ters = "";
+
 
         for (int i = t.length() - 1; i >= 0; i--) {
             ters = ters + t.substring(i, i + 1);
@@ -246,6 +248,7 @@ public class Tekrar {
             }
             System.out.println();
         }
+
 
     }
 }

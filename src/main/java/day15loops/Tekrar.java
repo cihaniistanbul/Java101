@@ -142,9 +142,9 @@ public class Tekrar {
 
         int i = 0;
         while (i < s.length()) {
-            char ch = s.charAt(i);
-            if (s.indexOf(ch) == s.lastIndexOf(ch)) {
-               sonuc = sonuc+ch;
+            char s = s.charAt(i);
+            if (s.indexOf(s) == s.lastIndexOf(s)) {
+               sonuc = sonuc+s;
 
             }
             i++;
@@ -208,7 +208,7 @@ public class Tekrar {
         Username ve password dogru ise console'a "Hesabiniza hosgeldiniz!" yazdirin.
         Username veya password yanlis ise 4 kere "Username ve password'unuzu giriniz" mesaji versin
         Username veya password 4. kere yanlis girilirse "Hesabiniz bloke olmustur" mesaji vererek islemi tamamlayiniz
- */
+
 
 
         Scanner scan = new Scanner(System.in);
@@ -236,7 +236,144 @@ public class Tekrar {
             counter++;
 
         } while (true);
+ */
+
+        /*
 
 
+        //Ornek 1: 3ten 6 ya kadar tamsayilari console a yazdiriniz
+        for (int i = 3; i < 7; i++) {
+            System.out.println(i);
+        }
+
+
+        int i = 3;
+        while (i < 7) {
+            System.out.println(i);
+            i++;
+        }
+
+
+        //Ornek 2 : 23 den 12 ye kadar cift sayilari console a yazdiriniz
+
+        int i=23;
+        while (i>11){
+          if (i%2==0){
+              System.out.println(i);
+          }
+          i--;
+        }
+
+
+
+        //Ornek 3 : 6 dan 19 a kadar tum tek sayilari console a yazdiriniz
+
+        int i = 6;
+        while (i < 20) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+         */
+
+        /*
+      Example 1: Kullanicinin verdigi sayi icin carpim tablosunu olusturup console'a yazdiran kodu yaziniz
+              3 ==> 3x1=3
+                    3x2=6
+                    3x3=9
+                    3x4=12 ...
+                    3x10=30
+
+      -->Kullanici 3 verince, verdigi sayi hep basa koyulmus
+         Daha sonra arada 'x' isareti var
+         i'nin degerini koyuyoruz 1,2,3..
+         Araya = koyuyoruz bu da sabit
+         10 a kadar devam etmis.
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Carpim tablosu icin sayi giriniz");
+        int data = input.nextInt();
+
+        int i = 1;
+        while (i < 11) {
+            System.out.println(data + "x" + i + "=" + data * i);
+            i++;
+        }
+*/
+
+        //Example 2 : Verilen bir String de her harfin sonrasina "*" sembolu ekleyin
+        //      Java --> J*a*v*a*
+
+/*
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Kelime giriniz");
+        String word = scan.nextLine();
+
+        String yeni = "";
+
+        int i = 0;
+        while (i < word.length()) {
+            yeni += word.charAt(i) + "*";
+
+            i++;
+        }
+        System.out.println(yeni);
+
+
+
+ */
+        /*
+
+
+        1
+        2 6
+        3 7 10
+        4 8 11 13
+        5 9 12 14 15
+
+*/
+
+/*
+
+
+        int rows = 5;
+
+        for (int i = 1; i <= rows; i++) {  //rows
+            int data = i;   //column baslangıcı
+
+            for (int j = 1; j <= i; j++) { //column
+                System.out.print(data + " ");
+                data = data + rows - j;
+            }
+            System.out.println();
+        }
+ */
+
+
+        //Example 3: Bir String deki tekrarsiz characterleri console a yazdiriniz
+        // kertenkelle --> rtn
+
+        String s = "kertenkelle";
+
+        String sonuc="";
+
+       int i=0;
+       while (i<s.length()){
+          char ch= s.charAt(i);
+
+          if (s.indexOf(ch)==s.lastIndexOf(ch)){
+              sonuc += ch;
+
+
+          }
+           i++;
+
+       }
+        System.out.println(sonuc);
     }
+
+
 }

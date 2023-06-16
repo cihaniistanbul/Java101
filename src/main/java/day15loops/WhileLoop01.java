@@ -28,7 +28,7 @@ public class WhileLoop01 {
                     artirma azaltma
         }
 
-        Note: For loop ile yapacaginiz her seyi while loop ile yapabilirsiniz. Ar
+        Note: For loop ile yapacaginiz her seyi while loop ile yapabilirsiniz.
               Aralarinda sadece syntax farki var
 
 

@@ -18,6 +18,28 @@ public class Cat extends Animal {
     public void drink() {
         System.out.println("Cat drink"); //sag tik-generate-override
     }
+
+
+    @Override
+    public Animal create() {
+        return new Cat();
+    }
+
+
+    @Override
+    public int add(int a, int b) {
+        return a+b;
+    }
+
+
+    @Override
+    public Integer multiply(Integer a, Integer b) {
+        return a*b;
+    }
+
+
+
 }
+
 
  //parent classdan bir methodu alip degistirerek kullanamaya override denir ve basina @override yazilir
