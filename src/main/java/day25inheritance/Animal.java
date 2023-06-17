@@ -59,7 +59,7 @@ public class Animal {
 
 
               1) Burada 500 cesit hayvan olabilirdi. Hepsine ayri ayri eat, drink vs koyduk. Tekrar java da iyi degil. Bu
-               sekilde yapmak  en kotu ozelliklerin basinda gelir.
+               sekilde yapmak en kotu ozelliklerin basinda gelir.
 
               2) Olusturdugumuz yapidaki bir seyi degistirmek istiyoruz diyelim tek tek 500unude gezip yeniden guncellememiz lazim
 

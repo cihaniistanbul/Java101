@@ -9,5 +9,10 @@ public class StudentRunner {
         System.out.println(s1.getNotOrt()); //3.53
 
         System.out.println(s1.isSuccessful());
+
+
+
+
+
     }
 }

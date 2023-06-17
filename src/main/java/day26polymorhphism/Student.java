@@ -37,4 +37,25 @@ public class Student {
     public boolean isSuccessful() {
         return successful;
     }
+
+    /*
+    Encapsulation yaptigimiz datayi istersek diger classlardan nasil degistirebiliriz?
+    "set method" olusturarak Encapsulate edilmis datanin degerini degistirebiliriz
+    1) set methodlar hep public olur
+    2) set methodlarin return type i hep void olur
+    3) set methodlar parametre kullanir, parametrenin data type i variable ile ayni olur
+
+     */
+
+    public void setStdId(String stdId) {
+        this.stdId = stdId;
+    }
+
+    public void setNotOrt(double notOrt) {
+        this.notOrt = notOrt;
+    }
+
+    public void setSuccessful(boolean successful) {
+        this.successful = successful;
+    }
 }

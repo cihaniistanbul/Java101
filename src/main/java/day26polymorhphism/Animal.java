@@ -57,6 +57,13 @@ public class Animal {
     public Animal create(){
         return new Animal();
     }
+    //create adli bir method olusturuyorum. "new" gordugu anda yeni bir object olustururdu.
+    //Bu method Animal object'i uretti. Bu methodu override yapicam. Cat classina gidip
+    //generate-override ..
+
+
+
+
 
 
     public int add(int a, int b){
