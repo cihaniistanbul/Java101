@@ -28,7 +28,7 @@ public class Animal {
             ii) ilk atanan deger degistirilemez
         b) Final keywordunu method larda kullanabilirsiniz
              i) final methodun bodysi degistirilmez
-            ii) method bodysi degistirilemeyince override yapmak mumkun olmaz
+            ii) method bodysi degistirilemeyince override yapmak mumkun olmaz!
         c) Final keywordunu class larda kullanabilirsiniz
             i) class final ise o classin childi olamaz
 
@@ -76,6 +76,9 @@ public class Animal {
     }
 
 
+    public final double circleArea(double r){  //final methodlar override edilemezler
+        return 3.14*r*r;
+    }
 
 
 

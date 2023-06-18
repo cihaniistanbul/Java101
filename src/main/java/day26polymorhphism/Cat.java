@@ -24,7 +24,7 @@ public class Cat extends Animal {
         return new Cat(); //Bu method bize yeni bir Cat object'i olusturuyor. Her class ayni zamanda bir data
                           //type tir demistik. Her class urettigi object'in kalibidir. Create methodumun return
                           //type'i Animaldir. Cat IS-A Animal
-    } //not 5 bn
+    } //not 5
 
 
 
