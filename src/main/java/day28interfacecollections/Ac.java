@@ -3,7 +3,11 @@ package day28interfacecollections;
 public interface Ac {
 
 
+     //Ac interface'in icin abstract method koyduk. Bunu da childlarda override ettik.(civic ve accord)
      public abstract void cool ();
+
+     void run();
+
 
 
      /*
@@ -46,6 +50,10 @@ public interface Ac {
     4) Interface'lerdeki tum methodlar otomatik olarak public dir, abstracttir, static degildir.
     5) Interface'ler concrete method iceremezler, interface icindeki hicbir sey istege bagli degildir.
        Her sey child classlar icin mecburidir. Bu yuzden interface'lere "to-do list" de denir.
+    6) Coklu interface parentlarin her birinin icine ayni isimli methodlar koyabiliriz.
+       Mesela Ac'nin, Engine'nin ve Security'nin iclerine run() methodu koymak gici
+       Child class herhangi birini override ettiginde hepsini override etmis gibi olur. Sonrada
+       body'i Child class da yazarak uygulamasini yapmis olur.
 
      */
 
@@ -74,13 +82,45 @@ public interface Ac {
      bizim normal methodumuz.
      Concrete methodlar childlar tarafindan override edilmek zorunda degiller, bir opsiyondur.
 
+
      Bir methodu neden abstract yapariz?
      Override edilebilmesi icin.
+
 
      Abstract classlardan neden object olusturamayiz?
      Cunku kalip bozuk, sakat olur :D abstract class'larda bir eksiklik vardı. Body yok-govdesi yok
      bundan uretecegimiz objectlerde de sıkıntı olusmamasi icin java izin vermiyor.
      Ama abstract classlarin constructor'i vardır.
+
+
+     Abstract class'larin child'i abstract olabilir mi?
+     Evet. Abstract olunca override etme zorunlulugu yoktu. Abstract class'in cocugu da abstractsa override etme
+     zorunlulugu yoktur. Ama concrete ise mecbur override ediyor. Ama abstract cocuklara karismiyor.
+
+
+     Neden interface ortaya cikti? Neden ihtiyac var?
+     Birden fazla parent'a ihtiyac duydugumuz durumda kullaniriz.
+
+
+     Interface'lerin icine concrete method koyabilir miyiz?
+     Hayir. Cunku alicanin teyzeleri meselesi. Kafa karisikligina yol aciyor. Concrete methodlarda body vardı. Body
+     o methodun isi nasil yapilacagini belirtir. Bu da cok detay icerir. Hepsi bir sey soyledigi icin child class
+     hangisini yapacagini sasiriyor :D java bu sebeple bazi temel dogrulari soylesinler ama detaylandirmasinlar
+     diyerek detay soylemeyi yasaklamis. Bunun bazi istisnalari var.
+
+
+     Interface'te method ile ilgili ozellikler?
+     Access Modifier otomatik publictir
+     Abstractir
+     Static degildir
+
+
+     Interfaceler Concrete method icermezler. "to-do" list gibidir. Dolayisiyla interface icerisindeki her sey abstract
+     oluyor. Abstract olunca da otomatik olarak childlar icin mecburi oluyor.
+
+
+
+
 
 
 

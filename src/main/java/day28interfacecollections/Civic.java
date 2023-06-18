@@ -15,6 +15,11 @@ public class Civic implements Ac, Engine, Security{
         System.out.println("Civic cools perfectly");
     }
 
+    @Override
+    public void run() {
+        System.out.println("Ac runs super");
+    }
+
     //Class'in uzerinde durdugumuz zaman implement yapip otomatik olarak override ediyor.
     //Abstract methodlar zorunlu ders gibiydi. Ayni nedenlerle interface'in icindeki her seyde mecburi ders gibi.
     //Interface'in icinde yazilan her sey child classlar icin mecburidir! Cunku bu bir abstract method. Bu yuzden
