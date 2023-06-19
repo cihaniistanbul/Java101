@@ -7,6 +7,11 @@ public interface Ac {
      public abstract void cool ();
 
      void run();
+     public static final int price = 2000; //variable olusturduk.3 tane keyword koyduk ama hepsi silik
+                                           //cunku interface'lerde otomatik olarak variable'lar public,
+                                           //static yapar her yerden ulasilsin diye ve final yapar degistirilmesin diye.
+                                           //public static final int price = 2000; --> public static final i siliyorum
+                                           //HondaRunner'a gidip Ac.price yazinca degeri gosteriyor
 
 
 
@@ -54,6 +59,51 @@ public interface Ac {
        Mesela Ac'nin, Engine'nin ve Security'nin iclerine run() methodu koymak gici
        Child class herhangi birini override ettiginde hepsini override etmis gibi olur. Sonrada
        body'i Child class da yazarak uygulamasini yapmis olur.
+    7) a) Interface'lerdeki tum variablelar otomatik olarak(default) final'dir. Bu yuzden interface icindeki variable'i
+          olusturdugumuzda mutlaka deger atamasi yapmalisiniz. (int price; dersek hata veriyor.deger atamasi yapmamiz gerek)
+          Bilindigi gibi final variable'larin degeri degistirilemez.
+       b) Interface'lerdeki tum variable'lar otomatik olarak(default) public'tir.
+       b) Interface'lerdeki tum variable'lar otomatik olarak(default) static'tir.
+
+        --> Dolayisiyla interface'lerde variable cagirirken interface adini kullanarak cagiririz, bu hem static variable
+           olmanin geregidir hem de okunurlugu artirir.
+
+     8) Normalde "interface" icine "concrete method" konulamaz. Ama bazi ozel durumlarda "concrete method" koymamiz
+        gerekirse, default keyword kullanarak bunu yapabiliriz.
+        "static" keyword'unu kullanarakta interface icine concrete method koyabiliriz.
+        (2 istisna var default ve static keywordleri)
+     9) "default" keywordunu kullanarak olusturdugunuz "concrete methodlara" interface'in child class'indan object
+         olusturarak ulasabilirsiniz.(cunku interface'ten object olusturamayiz, olusturamazsak bu methoda ulasamayiz)
+         "static" keywordunu kullanarak olusturdugunuz concrete methodlara ulasmak icin object olusturmaya gerek
+         yoktur, interface ismi yeterlidir.
+         (HondaRunner clasina gelip "myCivic." yazinca eco geldi. Bu nasil oldu? Bir ustte yazilan madde sayesinde)
+     10) Interface'lerden object olusturulamaz. Interface'lerin constructori yoktur.
+
+     11)
+
+            Child           Parent              keyword
+            class           class        ==>    extends
+            interface       interface    ==>    extends
+            class           interface    ==>    implements
+            interface       class        ==>    OLAMAZ
+
+      Ayni ise "extends" farkli ise implements kullaniriz, ve interface concrete classin childi olamaz
+
+
+
+
+          Abstract class ile interface arasindaki farklar nelerdir?
+      1) Abstract classlar hem abstract hemde concrete methodlar icerebilir fakat interfaceler sadece abstract method icerir.
+         ama interface'lerde istersek "default" ve "static " keywordlerini kullanarak "concrete" method uretebiliriz.
+      2) Abstract classlar multiple inheritance i desteklemez Ama interface ler destekler.
+      3) Abstract classlar icinde her turlu variable olusturabilir, interface'ler icindeki variable'lar public, static
+         ve final olmak zorundadir.
+      4) interface Class in childi olamaz ama abstract class classin childi olabilir
+      5) Abstract classlarda constructor vardir ama object uretemez, interface'lerde constructor yoktur bu yuzden
+         object uretilemez.
+
+
+
 
      */
 
@@ -117,6 +167,42 @@ public interface Ac {
 
      Interfaceler Concrete method icermezler. "to-do" list gibidir. Dolayisiyla interface icerisindeki her sey abstract
      oluyor. Abstract olunca da otomatik olarak childlar icin mecburi oluyor.
+
+
+
+        Istisnalar
+
+          DEFAULT
+     - Engine interface'inin icinde concrete bir method olusturduk.
+
+         void eco(){
+        System.out.println("Uses gas less");}
+
+      Yukaridaki sekilde {} ile method olusturunca hem child, hem interface kiziyor. Interface'in kizma sebebi
+     icerisinde body kullanamazdik. Ama koyduk diyelim. Bunu kullanmak istersek basina default yaziyoruz.
+
+      Eger default keyword'u olmasaydi biz bunu yapamazdik. Buradaki default Access Modifier degil.
+     Buradaki default, interface icerisinde concrete bir method yapabilmek icin javanin getirmis oldugu bir syntax.
+     (note 8)
+
+
+         STATİC
+      Tek yol bu degil. Birde static keyword'umuz var. Engine icinde yeni bir method olusturdum stop isimli
+     ve bodysi olan. Yine kiziyor.
+
+         void stop(){
+        System.out.println("Stops securely");}
+
+      Istisnai bir durumdan faydalanmak istiyorum. Basina gelip static yaziyorum kizmayi birakiyor.
+     (note 8)
+
+
+
+
+
+
+
+
 
 
 
