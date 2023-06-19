@@ -26,6 +26,9 @@ public class Set02 {
                                    //natural order'a gore dizdi, ben karisik vermistim.
 
 
+        //TreeSet cok yavas onun daha hizlisini kullanmak istersek HashSet kullaniriz(2.yol)
+
+
         long t2 = System.nanoTime();
 
 
@@ -40,6 +43,8 @@ public class Set02 {
         emailsHs.add("e@gmail.com");
         emailsHs.add("a@gmail.com");
         emailsHs.add("m@gmail.com");
+
+        //Bu olusturgumuz HashSet'i natural order'a koymak icin TreeSet olusturup icine HashSet'i koyuyoruz.
 
 
 

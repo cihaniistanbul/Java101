@@ -7,6 +7,7 @@ public class Queues01 {
     public static void main(String[] args) {
 
         Queue<String> depo = new LinkedList<>(); //burada LinkedList kullandik cunku Queue interface
+        //"Queue" bir interface'dir. İcerisinde Constructor yoktur. O yuzden LinkedList veya Priority kullanmamiz lazim
 
         depo.add("Milk");
         depo.add("Meat");
@@ -30,8 +31,11 @@ public class Queues01 {
 
         depo.clear();
         System.out.println(depo.poll());//null --> poll bos collectionlar icin bize null verir
+
         //System.out.println(depo.remove()); //exception firlatti
+
         //System.out.println(depo.element());//exception
+
         System.out.println(depo.peek());//null
 
         //Burada depo bos oldugu zaman remove ve element kullanirsak exception verir

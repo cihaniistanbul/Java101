@@ -50,8 +50,8 @@ public class LinkedList01 {
      NOTE:
 
         --> Listte bir elemani silince Java yeniden indexleme yapmak zorunda kaliyor.
-        --> Listte bir eleman ekleyince Java yeniden "reindex" yapmak zorunda.
-           Yani arraylistler elemani hem silerken hemde eklerken cok fazla caba sarfediyor. O yuzden yavas calisirlar
+        --> Listte bir eleman ekleyince Java yeniden "re-index" yapmak zorunda.
+            Yani arraylistler elemani hem silerken hemde eklerken cok fazla caba sarfediyor. O yuzden yavas calisirlar
 
            Tekrar indexleme ile ugrasmamak icin Java LinkedList yapisini olusturmus. Burada 2 tane bolmeli kutucuklar
           var. İlk bolumunde datalar, ikinci bolumunde bir sonrakini gosteren pointerlar var. Sadece sonunca pointer

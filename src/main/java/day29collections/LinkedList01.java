@@ -16,16 +16,16 @@ public class LinkedList01 {
         s.add("Nuriye");
         System.out.println(s); //[Nuriye, Orhan, Bunyamin, Saadet, Niyazi, Bilal, Abdullah, Nuriye]
 
-        // s.remove(2); //[Nuriye, Orhan, Saadet, Niyazi, Bilal, Abdullah, Nuriye]
-        // System.out.println(s);
+        // s.remove(2);
+        // System.out.println(s); //[Nuriye, Orhan, Saadet, Niyazi, Bilal, Abdullah, Nuriye] -->2.indexi siler, bunyamin gitti
 
-        // s.remove("Bilal");
-        // System.out.println(s);  //[Nuriye, Orhan, Saadet, Niyazi, Abdullah, Nuriye]
+        // s.remove("Bilal"); -->Bilal'i siler
+        // System.out.println(s);  //[Nuriye, Orhan, Bunyamin, Saadet, Niyazi, Abdullah, Nuriye]
 
-        // s.removeFirstOccurrence("Nuriye");
-        // System.out.println(s); //[Orhan, Saadet, Niyazi, Abdullah, Nuriye]
+        // s.removeFirstOccurrence("Nuriye"); -->Ilk gorunumu siler
+        // System.out.println(s); //[Orhan, Bunyamin, Saadet, Niyazi, Bilal, Abdullah, Nuriye]
 
-        s.removeLastOccurrence("Nuriye");
+        s.removeLastOccurrence("Nuriye"); //-->Son gorunumunu siler
         System.out.println(s); //[Nuriye, Orhan, Bunyamin, Saadet, Niyazi, Bilal, Abdullah]
 
 
@@ -46,7 +46,7 @@ public class LinkedList01 {
         Retrieves and removes the head (first element) of this list.
         Returns: the head of this list, or null if this list is empty
          */
-        String r2 = s.poll();
+        String r2 = s.poll(); //ilk nodu size verir ve listten siler (cut-paste)
         System.out.println(r2); //Nuriye
         System.out.println(s); //[Orhan, Bunyamin, Saadet, Niyazi, Bilal, Abdullah]
 
@@ -74,5 +74,23 @@ public class LinkedList01 {
         System.out.println(r4); //Orhan
         System.out.println(s); //[Bunyamin, Saadet, Niyazi, Bilal, Abdullah] cut-paste
 
+
+
+
+        /*
+               Collection nedir?
+         Java'da coklu datalarla manipulasyon yapmaya yarar. Nasil ki evinizde salata tabagi, yemek tabagi ayri ayri ise
+        yani bunlarin hepsi coklu yemek parcaciklarini muhafaza etmek icindir. Ama hepsinin bir amaci var. Tatli
+        tabagina yemek koyamayiz. Koyarsak garip karsilanir. Collection'lardaki mantik bu'dur. Neyi nerede kullanmamiz
+        gerektigine odaklanmaliyiz.
+         ArrayList'ler ekleme ve silme islemlerinde cok zahmet cekiyor :D Tekrar tekrar indexleme yapmak zorunda kaliyor.
+        Java yeni bir yapi olusturuyor. Bunun adi LinkedList'di.
+
+         LinkedList'lerde index yapisi olmadigi icin eleman ekleme cikarma isleminde basariliydi. Bunun dezavantaji da
+        search isleminde cok yavas olmasi.
+
+         Search isleminde ArrayList'ler daha basarili. Cunku indexlerle calisiyor.
+
+         */
     }
 }

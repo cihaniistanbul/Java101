@@ -3,7 +3,7 @@ package day28interfacecollections;
 public interface Ac {
 
 
-     //Ac interface'in icin abstract method koyduk. Bunu da childlarda override ettik.(civic ve accord)
+     //Ac interface'in icine abstract method koyduk. Bunu da childlarda override ettik.(civic ve accord)
      public abstract void cool ();
 
      void run();
@@ -28,7 +28,7 @@ public interface Ac {
                          onemli   --> Methodlar coklu parenttayken sadece ne yapilmasi gerektigini soylerler, nasil
                                   yapilacagina karisamazlar.
 
-       Bu methodun body'si yok. Cunku bu bir abstract method. Biz normalde abstract methodylar abstract keywordunu
+       Bu methodun body'si yok. Cunku bu bir abstract method. Biz normalde abstract methodlar icin abstract keywordunu
       yazardik. Burada yazmadik Java kizmadi. Cunku interface oldugu icin Java methodlarin abstract oldugunu bilir.
       Sen ister yaz ister yazma ben onu abstract kabul ediyorum der.
        Sadece void mavi renkte. Bunun anlami yazsan da bir yazmasan da demek. Public icinde bu gecerli. O zaman
