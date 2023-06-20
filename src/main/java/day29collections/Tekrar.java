@@ -1,8 +1,6 @@
 package day29collections;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Tekrar {
     public static void main(String[] args) {
@@ -67,5 +65,13 @@ public class Tekrar {
 
         System.out.println(ts.ceiling('E'));
 
+
+        Deque<String> d = new LinkedList<>();
+        d.add("Egg");
+        d.add("Milk");
+        d.add("Cheese");
+        d.add("Meat");
+
+        System.out.println(d);
     }
 }
