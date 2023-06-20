@@ -21,7 +21,7 @@ public class NestedLoop {
 
         for (int i = 1; i <= row ; i++) {              // disaridaki looptan gelen degerine gore limit belirleyerek calisiyor
 
-            for (int k = 1; k <=i  ; k++) {           // 1.dongude i=1 iken inner loop 1 kere calissin, 2.dongude i=2 old inner loop kere calissin istiyorum
+            for (int k = 1; k <=i  ; k++) {           // 1.dongude i=1 iken inner loop 1 kere calissin, 2.dongude i=2 old inner 2 loop kere calissin istiyorum
                                                       // o zaman k<=i koymaliyiz
                 System.out.print(k + "  ");
             }

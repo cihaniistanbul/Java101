@@ -353,6 +353,9 @@ public class Tekrar {
  */
 
 
+        /*
+
+
         //Example 3: Bir String deki tekrarsiz characterleri console a yazdiriniz
         // kertenkelle --> rtn
 
@@ -373,6 +376,61 @@ public class Tekrar {
 
        }
         System.out.println(sonuc);
+        */
+
+
+        //Ornek 1: 3ten 6 ya kadar tamsayilari console a yazdiriniz
+        //1.yol : for loop
+
+
+        for (int i = 3; i < 7; i++) {
+            System.out.println(i + " ");
+
+        }
+
+        //2.yol
+        int k = 3;
+        while (k < 7) {
+
+            System.out.print(k + " ");
+            k++;
+        }
+
+
+        //while-loop kullanarak "Java kolaydir" Stringini tersten yazdiriniz
+        String s = "Java kolaydir";
+
+        int n = s.length() - 1;
+        while (n >= 0) {
+            System.out.println(s.charAt(n));
+        }
+
+
+        //Kullanicidan isim ve soyismini alin
+        //Kullanicinin ilk isminin ilk harfinden, soy isminin son harfine kadar olan tum harfleri buyuk harf olarak ekrana
+        //ayni satirda aralarina bosluk birakarak yaziniz --> Ali Kemal --> A B C D  .. L
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("isminizi giriniz");
+        char ilkHarf = scan.nextLine().toUpperCase().charAt(0);
+
+        System.out.println("soy isminizi giriniz");
+        String soy = scan.nextLine().toUpperCase();
+        char sonHarf = soy.charAt(soy.length() - 1);
+
+        if (ilkHarf<=sonHarf){
+            while (ilkHarf<=sonHarf){
+                System.out.println(ilkHarf);
+                ilkHarf++;
+            }
+        }else {
+            while (sonHarf<ilkHarf){
+                System.out.println(sonHarf);
+                sonHarf++;
+            }
+        }
+
+
     }
 
 
