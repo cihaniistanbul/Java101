@@ -36,6 +36,42 @@ public class HashMap02 {
         System.out.println(stdAges); //{Suleyman=33, Hasan=35, Abdullah=24, Gulce=35, Benna=33}
 
 
+        //putIfAbsent() methodu yoksa ekle demek. Suleyman old icin eklemedi
+        stdAges.putIfAbsent("Suleyman",44);
+        System.out.println(stdAges); //{Suleyman=33, Hasan=35, Abdullah=24, Gulce=35, Benna=33}
 
+
+        //putIfAbsent("Ali",18); methodu map de Ali KEY olarak yoksa map e 18 value ile ekle demektir
+        stdAges.putIfAbsent("Ali",18);
+        System.out.println(stdAges); //{Suleyman=33, Hasan=35, Abdullah=24, Gulce=35, Benna=33, Ali=18}
+
+
+        //get() ve getOrDefault() methodu eger aranan elaman mapte varsa ayni value yu verir.
+        System.out.println(stdAges.get("Abdullah"));//24
+        System.out.println(stdAges.getOrDefault("Abdullah", 0)); //24
+
+
+        //eger eleman mapte yoksa get() methodu "null" verir,
+        // getOrDefault() methodu sizin belirttiginiz degeri verir
+        System.out.println(stdAges.get("Mehmet"));//null
+        System.out.println(stdAges.getOrDefault("Mehmet", 0)); //0
+
+
+        //containsValue(63) methodu mapin icindeki value larin icerisinde 63 olup olmadigini kontrol eder
+        System.out.println(stdAges.containsValue(63)); //false
+
+
+        //containsKey("Seda") methodu mapin icindeki key lerin icerisinde "Seda" olup olmadigini kontrol eder
+        System.out.println(stdAges.containsKey("Seda"));//false
+
+
+        //remove("Abdullah")  methodu key kullanarak entry i silmeye yarar
+        stdAges.remove("Abdullah");
+        System.out.println(stdAges); //{Suleyman=33, Hasan=35, Gulce=35, Benna=33, Ali=18}
+
+
+        //remove("Ali",19) methodu hem key hem value yu kontrol eder, eslesirse silme yapar
+        stdAges.remove("Ali",19);
+        System.out.println(stdAges); //{Suleyman=33, Hasan=35, Gulce=35, Benna=33, Ali=18}
     }
 }
