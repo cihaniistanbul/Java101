@@ -34,5 +34,8 @@ public class Vehicle {
    super()       --> parenttaki default constructor'a goturur
    super(String x) --> icinde parametre olana gidiyor
 
+
+   this mevcut class da ariyor, super ise parent ta ariyor
+
  */
 

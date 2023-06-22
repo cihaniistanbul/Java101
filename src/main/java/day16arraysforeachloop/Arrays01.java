@@ -44,7 +44,7 @@ public class Arrays01 {
 
         // Ornek 1: Arraydeki her elemanin sonuna "!" isareti koyarak ekrana yazdiriniz
         // Burada tekrarli bir islem var. 0.indexi alip sonuna ! koyucam, 1.indexi alip sonuna ! koyucam... loop kullaniliriz(for i)
-        // Note : length parantezi stringlerde method (parantezli), arraylerde ise parantezsiz yazilir (method degil)
+        // Note : length parantezi stringlerde parantezli (method), arraylerde ise parantezsiz yazilir (method degil)
 
         //  0       1      2        3       4
         //[Ekim, Ailana, Benna, Abdullah, Recep]
