@@ -1,4 +1,4 @@
-package day15loops;
+package day16arraysforeachloop;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -112,6 +112,8 @@ public class SuleymanHocaNestedLoopArrays {
 
         /*
         1) Array, Java'nin "ayni data" tipinde "coklu data" depolamak icin olusturdugu bir yapidir
+        2) Array'ler "primitive data type" leri veya "reference"lar ile calisir
+        3) Array'ler "super fast" dir ve "memory'de cok az yer" kaplarlar
 
          */
 
@@ -167,11 +169,26 @@ public class SuleymanHocaNestedLoopArrays {
 
         System.out.println(Arrays.toString(ages)); //[12, 23, 9, 38, 27]
 
-        int sum =0;
+        int carpim =0;
         for (int w: ages) {
-           sum= sum+w;
+           carpim= carpim+w;
         }
-        System.out.println(sum); //109
+        System.out.println(carpim); //109
+
+
+
+        //Example 3: Bir char Array'i olusturunuz, 3 eleman ekleyiniz, elemanlarin carpimini bulup console'a yazdiriniz
+        char initials[] = new char[3];
+        initials[0]='J';
+        initials[1]='P';
+        initials[2]='A';
+
+        int sum=1;
+        for (char w : initials) {
+            sum = sum*w;
+        }
+        System.out.println(sum); //384800
+
 
 
 
