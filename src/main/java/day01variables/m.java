@@ -4,10 +4,8 @@ import java.util.*;
 
 public class m {
 
-
-    /*
-
-
+    static Scanner scan = new Scanner(System.in);
+/*
 
 
 
