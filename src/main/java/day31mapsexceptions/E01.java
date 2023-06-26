@@ -50,7 +50,7 @@ public class E01 {
             System.out.println(a / b);
             System.out.println("try block ici exception sonrasi");
 
-        } catch (ArithmeticException e) { //matematik iile alakali olusabilecek butun exceptionlari yakalar
+        } catch (ArithmeticException e) { //matematik ile alakali olusabilecek butun exceptionlari yakalar
 
             System.out.println("Do not divide by zero ");
         }

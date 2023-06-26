@@ -8,4 +8,5 @@ public class Methodlar {
     //id tanimla (1000)
 
 
+
 }
