@@ -39,7 +39,7 @@ public class E04 {
 
 
     //                                               parent           child
-    public static void main(String[] args) throws IOException, FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         Scanner input = new Scanner(System.in);
 
@@ -50,11 +50,13 @@ public class E04 {
 
         int k =0;
 
-        while ((k=fis.read())!=-1){
-            System.out.print((char) k);
+        while ((k=fis.read())!=-1){  //fis objectimi eline al, read methodunu kullan ve buldugun degeri k'nin icine koy.
+                                     //ve -1 e esit olmadigi surece okumaya devam et
+            System.out.print((char) k); //k'da ascii deger var. bu sekilde yazdirirsam ascii deger gorurum.Bunu charactere
+                                        //donusturmek icin char koyuyoruz basina.Mesela k'ya 65 gelecek ama char sayesinde A gorucez
         }
 
-        /* "fis.read()" methodu
+        /*
         NOTE:
             "FileInputStream" class'i uzerinden bir object olusturup, bu objectimiz sayesinde class'da bulunan methodlari
            kulllanabiliriz. Object'ler kalibinin instance'i demistik.
@@ -71,6 +73,25 @@ public class E04 {
           bulamazsan execution'i durdur ve bana "FileNotFoundException" firlatarak bildir, mudahale edicem diyorum.
           Java kizmayi birakiyor.
           try-catch ile de yapabiliriz.
+
+          "read()" methodu sayesinde, ona verdigimiz adrese gidip oradaki characterlerin ascii degerlerini tek tek alip
+          bize verecek. Okuyacak deger kalmadiginda yani en sona geldiginde -1 veriyor.
+          Code'mu buna gore yaziyorum -1 vermedigi surece okumaya devam et diyorum loop ile.
+
+
+           loop ile code'umu yazdim. Ama read methodu hata veriyor. Adrese gidip okuyamazsam ne olacak diyor? more actions
+          a tiklayip ister try-catch yap ister method signature'a ekler. Tikladigim anda "IOException" geldi. Bazi
+          exception class'larin arasinda parent-child iliskisi var demistik. IOException, FileNotFound'un parent'i.
+          Babasi ciktigina gore artik FileNotFound'a gerek yok. Yazsak bile sonuk cikiyor.
+
+
+          (char) k -->  (char) 74 --> J -->Type Casting yapiyoruz
+
+
+
+
+
+
 
 
 

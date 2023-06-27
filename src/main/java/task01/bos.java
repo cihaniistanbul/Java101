@@ -1,16 +1,14 @@
 package task01;
 
-import java.util.*;
+public class bos {
+    /*
 
 public class islemler {
     static Scanner scan = new Scanner(System.in);
-
     public static Map<Integer, urunTanimlama> urunListesiMap = new HashMap<Integer, urunTanimlama>();
     public static int urunId = 1000;
 
-
     public static void girisPaneli() {
-
         System.out.println("====================================\nDEPO YONETIM PANELI\n" +
                 "====================================\n"
                 + "1- BULUNDURULACAK URUN TANIMLAMA\n2- URUN LİSTELE\n3- DEPOYA URUN GİRİŞİ\n4- URUNU RAFA KOY\n5- DEPODAN URUN ÇIKIŞI\n6- DEPO SİSTEMİNDEN ÇIKIŞ");
@@ -46,11 +44,10 @@ public class islemler {
                 break;
         }
     }
-
-
+​
+​
     private static void urunTanimla() {
-
-        //urunTanimlama 	==>  urunun ismi, ureticisi ve birimi girilecek. id  alınacak.
+       //urunTanimlama 	==>  urunun ismi, ureticisi ve birimi girilecek. id  alınacak.
 
         System.out.println("   ********* urun tanımlama sayfası *********");
         System.out.println("ürün ismi giriniz: ");
@@ -73,7 +70,6 @@ public class islemler {
 
     }
 
-
     private static void urunListele() {
 //urunListele 	==> tanimlanan urunler listelenecek. urunun adeti ve raf numarasi tanimlama yapilmadiysa default deger gorunsun.
         Set<Map.Entry<Integer, urunTanimlama>> urunEntrySeti = urunListesiMap.entrySet();
@@ -86,7 +82,6 @@ public class islemler {
             System.out.printf("%-8d %-12s %-15s %-12s %-12d %-9s\n", entryKey, urunListesiMap.get(entryKey).getUrunIsmi(), urunListesiMap.get(entryKey).getUretici(), urunListesiMap.get(entryKey).getBirim(), urunListesiMap.get(entryKey).getUrunMiktar(), urunListesiMap.get(entryKey).getRaf());
         }
     }
-
 
     private static void urunGirisi() {
         //urunGirisi 		==> giris yapmak istedigimiz urnunun id numarasi ile girecegiz.
@@ -161,10 +156,10 @@ public class islemler {
                 }
             } while (flag);
 
-            if (urunListesiMap.get(arananId).getUrunMiktar() - guncelmiktar < 0) {
+            if ( urunListesiMap.get(arananId).getUrunMiktar() - guncelmiktar < 0) {
                 System.out.println("deponuzda bu miktarda ürün yoktur.\n bulunan miktar: " + urunListesiMap.get(arananId).getUrunMiktar());
             } else {
-                urunListesiMap.get(arananId).setUrunMiktar(urunListesiMap.get(arananId).getUrunMiktar() - guncelmiktar);
+                urunListesiMap.get(arananId).setUrunMiktar( urunListesiMap.get(arananId).getUrunMiktar() - guncelmiktar);
                 System.out.println("urun miktarınız güncel hale getirildi\n güncel miktar: " + urunListesiMap.get(arananId).getUrunMiktar());
             }
 
@@ -177,10 +172,5 @@ public class islemler {
     private static void cikis() {
         System.out.println(" depo dan çıkış yaptınız. tekrar bekleriz..");
     }
-
+     */
 }
-
-
-
-
-

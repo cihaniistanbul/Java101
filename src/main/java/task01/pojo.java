@@ -1,11 +1,12 @@
-package task;
+package task01;
+/*
 
-public class PojoUrun {
 
-    private String id;
+public class pojo {
+    private  String id;
     private String urunIsmi;
     private String uretici;
-    private int miktar;
+    private int  miktar;
     private String birim;
     private String raf;
 
@@ -63,7 +64,7 @@ public class PojoUrun {
 
     //   Getter Setter____________________________________________________________________________________________________
 
-    public PojoUrun(String urunIsmi, String uretici, int miktar, String birim, String raf) {
+    public PojoUrun( String urunIsmi, String uretici, int miktar, String birim, String raf) {
 
         this.urunIsmi = urunIsmi;
         this.uretici = uretici;
@@ -88,6 +89,4 @@ public class PojoUrun {
     public PojoUrun() {
     }
 }
-
-
-
+ */
