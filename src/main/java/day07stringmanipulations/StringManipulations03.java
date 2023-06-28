@@ -25,7 +25,6 @@ public class StringManipulations03 {
         Double totalPrice = Double.valueOf(tv2) + Double.valueOf(laptop2);
         System.out.println(totalPrice);
 
-
         //Ornek 3: Verilen ismin ilk isminin ilk harfini ve soy isminin ilk harfini ekrana yazdiriniz.
         // "    Ali Can    " -->AC
 

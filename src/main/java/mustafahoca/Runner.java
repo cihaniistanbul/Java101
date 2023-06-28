@@ -1,9 +1,7 @@
-package task01;
+package mustafahoca;
 
-public class runner extends islemler{
+public class Runner extends Depo{
     public static void main(String[] args) {
-
         girisPaneli();
     }
-
 }

@@ -1,9 +1,5 @@
-package task01;
+package konutekrari;
 
-import task.PojoUrun;
-
-import java.util.HashMap;
-import java.util.Scanner;
 /*
 
 

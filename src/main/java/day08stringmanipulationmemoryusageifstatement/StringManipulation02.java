@@ -20,6 +20,7 @@ public class StringManipulation02 {
         String i = "Ali Can";
         boolean result = h.equals(i);
         System.out.println(result);//false
+
         //___________________________________________________________________________________________________________________________
         //Java da Memory kullanimi
         /*
@@ -54,7 +55,10 @@ public class StringManipulation02 {
         System.out.println(s.equals(t));//false cunku degerler farkli
         System.out.println(s == r);//false cunku adresler farkli
         System.out.println(s.equals(r));//true cunku equals() sadece degerlere bakar."s" ve "r" nin degerleri ayni oldugunda true verir
+
 //___________________________________________________________________________________________________________________________
+
+
         //Ornek 3: Verilen iki string in birbirinin aynisi olup olmadigini buyuk harf kucuk harf dikkate almadan
         // kontrol eden kodu yaziniz
         //equalsIgnoreCase()iki string in birbirinin aynisi olup olmadigini buyuk harf kucuk harf dikkate almadan kontrol eder
