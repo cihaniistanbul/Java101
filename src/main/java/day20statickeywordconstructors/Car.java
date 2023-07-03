@@ -1,6 +1,6 @@
 package day20statickeywordconstructors;
 
-public class Car {
+public class  Car {
 
     /*
     Constructor nedir?
@@ -44,7 +44,7 @@ public class Car {
 
 
 
-    // Car class'inda olabilecek ozellikleri yaziyoruz
+    // Car class'inda olabilecek ozellikleri yaziyoruz (variable olusturduk)
     String make = "Honda";
 
     String model = "Accord";
@@ -85,6 +85,8 @@ public class Car {
                 ", hybrid=" + hybrid +
                 '}';
     }
+
+
 }
 
 /*

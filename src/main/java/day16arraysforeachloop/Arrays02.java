@@ -15,9 +15,9 @@ public class Arrays02 {
         arr[3] = "Music";
         arr[4] = "Art";
 
-        System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
+        System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr)); //[Math, Science, Music, Music, Art]
 
-        System.out.println(arr[0].length() + arr[arr.length - 1].length());
+        System.out.println(arr[0].length() + arr[arr.length - 1].length()); //7
         //                                           son character
         // arr[0]-->Math,  bu bir String. Stringlerde character sayisini length() methodu ile yapiyorduk
 
@@ -70,7 +70,7 @@ public class Arrays02 {
         System.out.println(sum);//30
 
 
-        //Ornek 3: Notlar adinda Integer bir array olusturunuz icine 6 tane not yerlestiriniz ve not ortalamsini ekrana yazdiriniz
+        //Ornek 3: Notlar adinda Integer bir array olusturunuz icine 6 tane not yerlestiriniz ve not ortalamasini ekrana yazdiriniz
         // ortalama icin tek tek gidip datalar uzerinde dolasmam lazim. o zaman for each loop kullanmam lazim
         //loop ile gezdikten sonra toplam elde edicem, onun icin toplam sepeti olusturucam
 

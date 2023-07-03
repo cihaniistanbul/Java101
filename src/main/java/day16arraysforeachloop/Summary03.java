@@ -14,18 +14,18 @@ public class Summary03 {
         String words1[] = s.split(" ");
         System.out.println(Arrays.toString(words1)); //[Calis, bakalim, zor, mu?]
 
-        System.out.println("Kelime sayisi: " + (words1.length));
+        System.out.println("Kelime sayisi: " + (words1.length)); //4
 
 
         //"s" String'inde kac character kullanilmistir, split() kullanarak yapiniz
         String words2[] = s.split("");
-        System.out.println(Arrays.toString(words2));
+        System.out.println(Arrays.toString(words2)); //[C, a, l, i, s,  , b, a, k, a, l, i, m,  , z, o, r,  , m, u, ?]
         System.out.println("Character Sayisi: " + words2.length); //21
 
 
         //"s" String'inde bosluk haric kac character kullanilmistir, split() kullanarak yapiniz
         String words3[] = s.replaceAll(" ", "").split("");
-        System.out.println(Arrays.toString(words3));
+        System.out.println(Arrays.toString(words3)); //[C, a, l, i, s, b, a, k, a, l, i, m, z, o, r, m, u, ?]
         System.out.println("Bosluk haric character sayisi: " + words3.length); //18
 
 

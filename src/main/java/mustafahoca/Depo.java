@@ -104,6 +104,8 @@ public class Depo {
                 System.out.println("urun girisi basarili...");
 
                 int guncelMiktar=0;
+                boolean result= true;
+                    
 
             }else {
                 System.out.println("girilen id'ye ait ürün bilgisi bulunamadi...");
