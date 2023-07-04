@@ -51,11 +51,13 @@ public class Depo {
                     case "5":
                         urunCikisi();
                         break;
-                    case "Q":
-                    case "q":
+                    case "6":
                         System.out.println("tekrar görüşmek üzere");
+                        break;
+                    default:
+                        System.out.println("hatali giris yaptiniz.Tekrar deneyiniz...");
                 }
-            } while (!secimOpr.equals("Q"));
+            } while (!secimOpr.equals("6"));
         }
 
         private static void urunCikisi() {
@@ -105,7 +107,23 @@ public class Depo {
 
                 int guncelMiktar=0;
                 boolean result= true;
-                    
+                do {
+                    try {
+                        if (result == true) {
+                            input.nextLine();
+                        }
+                        guncelMiktar = input.nextInt();
+                        input.nextLine();//dummy
+                        result = false;
+                    } catch (Exception e) {
+                        System.out.println("lütfen geçerli miktar giris yapınız");
+                    }
+                } while (result);
+
+                urunlerMap.get(id).setMiktar(guncelMiktar + urunlerMap.get(id).getMiktar());
+
+                System.out.println("urun miktarınız güncel hale getirildi\n güncel miktar: " + urunlerMap.get(id).getMiktar());
+
 
             }else {
                 System.out.println("girilen id'ye ait ürün bilgisi bulunamadi...");
@@ -115,6 +133,8 @@ public class Depo {
 
 
         public static void urunTanimlama() {
+
+
             System.out.println("lütfen id giriniz");
             int id1= input.nextInt();
 
