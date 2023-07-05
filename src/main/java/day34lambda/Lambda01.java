@@ -34,6 +34,12 @@ public class Lambda01 {
         System.out.println();
         printSquareOfOddElements(nums); //81 17161 81 225
         System.out.println();
+        printCubeOfDistinctOddElements(nums); //729 2248091 3375
+        System.out.println();
+        printSumOfSquaresOfDistinctEvenElements(nums); //81 17161 81 225
+        System.out.println();
+        printProductOfSquaresOfDistinctEvenElements(nums); //45158400
+        System.out.println();
     }
     //1) Bir list'teki elemanlari ayni satirda aralarina bosluk koyarak yazdiran
     // method'u olusturunuz.(Structured == Yapisal)
@@ -107,5 +113,75 @@ public class Lambda01 {
 
        // "map()" methodu stream'deki her bir elemanla ilgili degisiklik yapacagimiz zaman kullanilir.
     }
+
+
+    //6) Bir list'teki "tek sayi" olan elemanlarin "kup"lerini "tekrarsiz" olarak ayni satirda aralarina bosluk
+    // koyarak yazdiran method'u olusturunuz.(Functional)
+
+    public static void printCubeOfDistinctOddElements(List<Integer>nums){ //method
+
+        nums.
+                stream().
+                distinct().
+                filter(t->t%2!=0).
+                map(t->t*t*t).
+                forEach(t-> System.out.print(t+ " "));
+
+
+        //"distinct()" methodu tekrarlayan ogeleri kaldirir sadece benzersizler kalir.
+        //bu methodu en basta kullanirsak javayi daha az yormus oluruz. Bastan eleyerek gidiyoruz. best practice'dir
+    }
+
+
+
+    //7)Bir list'teki "tekrarsiz" "CIFT "
+    // ELEMANLARIN "karelerinin" "toplamını" hesaplayan method oluşturun
+
+    public static void printSumOfSquaresOfDistinctEvenElements(List<Integer>nums){
+        Integer sum = nums.stream().distinct().filter(t->t%2==0).map(t->t*t).reduce(0,(t,u)->t+u);
+        System.out.println(sum); //456
+    }
+
+    //"reduce()" methodu coklu datanin tek bir degere indirgenmesi gerektiginde kullanilir (azaltma)
+
+
+    /*
+        >map() methodu stream de bulunan her bir elemanda degisiklik yapilacagi zaman kullanilir.
+        >filter() methodu stream icerisinde belirli datalari cekmek icin kullanilir
+        >stream() methodu listteki elemanlari akis haline getirir. Hafizada yer tutmaz.
+        >forEach() methodu streamdeki her elemani alip yazdirmaya yarar.
+        >distinct() methodu stream deki elemanlarin tekrarsiz olanlarak kullanmaya yarar. stream den sonra kullanmak
+            Java'yi yormamak icin best practice.
+        >reduce() streamde coklu datanin tek bir dataya indirgenecegi (reduction) zaman kullanilir.
+            identity ==> etkisiz eleman yazilir
+         */
+
+
+
+    //8) Bir list'teki "Tekrarsiz" elemanlardan "çift" olanlarin "karesinin"
+    // "çarpımını" hesaplayan bir method oluşturun
+
+    public static void printProductOfSquaresOfDistinctEvenElements(List<Integer>nums){
+        Integer product = nums.
+                stream().
+                distinct().
+                filter(t->t%2==0).
+                map(t->t*t).
+                reduce(1,(t,u)->t*u);
+        System.out.println(product);
+
+    }
+
+
+    //9) Verilen List'teki "maksimum degeri" bulmak icin bir method olusturun
+    //1.yol
+    public static void getMaxValue1(List<Integer>nums){
+        nums.
+                stream()
+                .distinct()
+                .reduce(Integer.MIN_VALUE,(t,u)-> t>u ? t : u );
+
+    }
+
 
 }
