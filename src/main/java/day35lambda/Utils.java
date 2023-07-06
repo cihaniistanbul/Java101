@@ -9,6 +9,11 @@ public class Utils {
     }
 
 
+    public static boolean isNumberEven(int num){
+        return num%2==0;
+    }
+
+
     //Object koyma sebebimiz hem Stringleri hem int leri hepsini yazdirabilmesi icin
 
 
