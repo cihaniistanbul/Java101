@@ -8,7 +8,7 @@ public class Arrays01 {
         int a = 13;
         //Bu yapinin icinde sadece 1 tane data depolanabilir.
         //Ama biz code yazarken bir yapinin icinde coklu data depolama ihtiyaci hissederiz
-        //Bir yapinin icinde coklu data depolayabilme icin java "Array" yapisini olusturmustur.
+        //Bir yapinin icinde coklu data depolayabilmek icin java "Array" yapisini olusturmustur.
         // Javanin ayni data tipinde coklu data depolamak icin kullandigi yoldur Array <--
 
         //Array nasil olusturulur?

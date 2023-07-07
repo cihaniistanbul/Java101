@@ -31,7 +31,7 @@ public class Md02 {
         int nums[][] = {{5, 4}, {2, 3, 2}, {7}};
         int result = 1; //tum elemanlari carptiktan sonra sepete koymam lazim
 
-        for (int[] w : nums) { //outer foor loop ile nums MD array'ini dolasiyorum sirayla w sepetine koyuyor {5,4}...
+        for (int[] w : nums) { //outer for loop ile nums MD array'ini dolasiyorum sirayla w sepetine koyuyor {5,4}...
 
             for (int k : w) { // k'ya sirayla degerleri koyuyor. 5 sonra 4..
                 result = result * k;

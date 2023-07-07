@@ -73,7 +73,7 @@ public class Lambda01 {
        "t-> " lambda expression demek.
         Action'i stream ile veriyoruz ve list'in yapisini degistiyoruz. "stream" demek akis demek. Stream methodunu
        kullandiktan sonra yapimiz degisti. yatis modundan akis moduna gecildi.
-        "foreach" stream'de bulunan elemanlarin her biri icin demek. Foreach ile burada bulunan elemanlari alip tek te
+        "foreach" stream'de bulunan elemanlarin her biri icin demek. Foreach ile burada bulunan elemanlari alip tek tek
         t'nin icerisine koyuyoruz. Ne yapacaginida parantez icinde soyluyoruz.
         */
 
