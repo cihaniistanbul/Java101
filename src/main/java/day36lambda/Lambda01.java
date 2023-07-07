@@ -80,6 +80,23 @@ public class Lambda01 {
 
 
 
+        //7) Kursta bulunan ogrenci sayilarina gore buyukten kucuge sirali bir sekilde listin icinde veren kodu yaziniz.
+        List<Course> myList3 =courseList.stream().sorted(Comparator.comparing(Course::getNumberOfStudents).reversed()).collect(Collectors.toList());
+        System.out.println(myList3);
+
+
+
+        ////8 Kursta bulunan ingilizce bolumlerinin sayisini veren kodu yaziniz
+        long ingilizceBolumSayisi= courseList.stream().filter(t->t.getCourseName().contains("English")).count();
+        System.out.println(ingilizceBolumSayisi); //2
+
+
+
+        ///9 Ogrenci sayisi 140 tan az olan kurslari bir liste halinde veren kodu yaziniz
+        List<Course> myList4=  courseList.stream().filter(t->t.getNumberOfStudents()<140).collect(Collectors.toList());
+        System.out.println(myList4);
+        //[Course{season='Summer', courseName='Turkish Day', avarageScore=97, numberOfStudents=128},
+        // Course{season='Spring', courseName='English Day', avarageScore=95, numberOfStudents=132}]
 
 
 
